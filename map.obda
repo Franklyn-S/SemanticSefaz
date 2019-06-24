@@ -1,0 +1,13 @@
+[PrefixDeclaration]
+obda:		https://w3id.org/obda/vocabulary#
+xsd:		http://www.w3.org/2001/XMLSchema#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		<http://arida.com/sefaz/tce/id={id}> a <http://arida.com/sefaz/tce> ; <http://arida.com/sefaz/tce#exercicio> {exercicio}^^xsd:string ; <http://arida.com/sefaz/tce#ato> {ato}^^xsd:string ; <http://arida.com/sefaz/tce#data_ato> {data_ato}^^xsd:string ; <http://arida.com/sefaz/tce#tipo> {tipo}^^xsd:string ; <http://arida.com/sefaz/tce#entidade> {entidade}^^xsd:string ; <http://arida.com/sefaz/tce#responsavel> {responsavel}^^xsd:string ; <http://arida.com/sefaz/tce#cargo> {cargo}^^xsd:string ; <http://arida.com/sefaz/tce#municipio> {municipio}^^xsd:string ; <http://arida.com/sefaz/tce#id> {id}^^xsd:integer . 
+source		SELECT * FROM "public"."tce"
+]]
+
